@@ -7,3 +7,12 @@ C:\Users\Alyona\Documents\GitHub\photoPIXEL\photoPIXEL\obj\Debug\photoPIXEL.Prop
 C:\Users\Alyona\Documents\GitHub\photoPIXEL\photoPIXEL\obj\Debug\photoPIXEL.csproj.GenerateResource.cache
 C:\Users\Alyona\Documents\GitHub\photoPIXEL\photoPIXEL\obj\Debug\photoPIXEL.exe
 C:\Users\Alyona\Documents\GitHub\photoPIXEL\photoPIXEL\obj\Debug\photoPIXEL.pdb
+C:\Users\Alyona\Documents\GitHub\PixelPhoto\photoPIXEL\photoPIXEL\bin\Debug\photoPIXEL.exe.config
+C:\Users\Alyona\Documents\GitHub\PixelPhoto\photoPIXEL\photoPIXEL\bin\Debug\photoPIXEL.exe
+C:\Users\Alyona\Documents\GitHub\PixelPhoto\photoPIXEL\photoPIXEL\bin\Debug\photoPIXEL.pdb
+C:\Users\Alyona\Documents\GitHub\PixelPhoto\photoPIXEL\photoPIXEL\obj\Debug\photoPIXEL.csprojAssemblyReference.cache
+C:\Users\Alyona\Documents\GitHub\PixelPhoto\photoPIXEL\photoPIXEL\obj\Debug\photoPIXEL.Form1.resources
+C:\Users\Alyona\Documents\GitHub\PixelPhoto\photoPIXEL\photoPIXEL\obj\Debug\photoPIXEL.Properties.Resources.resources
+C:\Users\Alyona\Documents\GitHub\PixelPhoto\photoPIXEL\photoPIXEL\obj\Debug\photoPIXEL.csproj.GenerateResource.cache
+C:\Users\Alyona\Documents\GitHub\PixelPhoto\photoPIXEL\photoPIXEL\obj\Debug\photoPIXEL.exe
+C:\Users\Alyona\Documents\GitHub\PixelPhoto\photoPIXEL\photoPIXEL\obj\Debug\photoPIXEL.pdb
