@@ -118,6 +118,7 @@
             this.trackBar1.TabIndex = 1;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.trackBar1.Value = 1;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // openFileDialog1
             // 

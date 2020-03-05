@@ -34,5 +34,10 @@ namespace photoPIXEL
         {
             
         }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            Text = trackBar1.Value.ToString();
+        }
     }
 }
