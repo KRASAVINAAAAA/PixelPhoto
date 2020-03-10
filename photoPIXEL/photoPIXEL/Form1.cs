@@ -27,8 +27,34 @@ namespace photoPIXEL
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                pictureBox1.Image = new Bitmap(openFileDialog1.FileName);
+                pictureBox1.Image = null;
+                _bitmaps.Clear(); //очищаем старую картинку
+                var bitmap = new Bitmap(openFileDialog1.FileName);
+                RunProcessing(bitmap);
             }
+        }
+
+        private void RunProcessing(Bitmap bitmap)
+        {
+            var pixels = GetPixels(bitmap);
+            var pixelsInStep = (bitmap.Width * bitmap.Height) / 100;
+        }
+
+        private List<Pixel> GetPixels(Bitmap bitmap) //возврат из класса
+        {
+            var pixels = new List<Pixel>(bitmap.Width * bitmap.Height);
+            for (int y = 0; y < bitmap.Height; y++)
+            {
+                for (int x = 0; x < bitmap.Width; x++)
+                {
+                    pixels.Add(new Pixel()      //будет добавляться новый объект типо пикселя 
+                    {
+                        Color = bitmap.GetPixel(x, y),       //получаем координаты x и y
+                        Point = new Point() { X = x, Y = y }
+                    }); 
+                }
+            }
+            return pixels;
         }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
