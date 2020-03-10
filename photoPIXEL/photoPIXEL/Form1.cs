@@ -28,10 +28,12 @@ namespace photoPIXEL
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
+                menuStrip1.Enabled = trackBar1.Enabled = false;
                 pictureBox1.Image = null;
                 _bitmaps.Clear(); //очищаем старую картинку
                 var bitmap = new Bitmap(openFileDialog1.FileName);
                 await Task.Run(() => { RunProcessing(bitmap); });
+                menuStrip1.Enabled = trackBar1.Enabled = true;
             }
         }
 
