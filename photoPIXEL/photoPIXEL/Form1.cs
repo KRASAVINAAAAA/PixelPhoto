@@ -31,7 +31,7 @@ namespace photoPIXEL
                 pictureBox1.Image = null;
                 _bitmaps.Clear(); //очищаем старую картинку
                 var bitmap = new Bitmap(openFileDialog1.FileName);
-                RunProcessing(bitmap);
+                await Task.Run(() => { RunProcessing(bitmap); });
             }
         }
 
@@ -53,6 +53,10 @@ namespace photoPIXEL
                 foreach (var pixel in currentPixelSet)
                     currentBitmap.SetPixel(pixel.Point.X, pixel.Point.Y, pixel.Color);
                 _bitmaps.Add(currentBitmap);
+                this.Invoke(new Action(() =>
+                  {
+                      Text = $"{i} %";
+                  }));
             }
 
             _bitmaps.Add(bitmap);
