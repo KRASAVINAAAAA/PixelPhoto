@@ -12,6 +12,7 @@ namespace photoPIXEL
 {
     public partial class Form1 : Form
     {
+        private List<Bitmap> _bitmaps = new List<Bitmap>(); //экземпляр
         public Form1()
         {
             InitializeComponent();
@@ -37,7 +38,9 @@ namespace photoPIXEL
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            Text = trackBar1.Value.ToString();
+            if (_bitmaps == null || _bitmaps.Count == 0)
+                return;
+            pictureBox1.Image = _bitmaps[trackBar1.Value - 1];  //берем элемент из битмапов, которое будет соответстваовать трек бару
         }
     }
 }
